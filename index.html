@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Juegos de Estrategia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Estrategia Gaming</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#juegos">Juegos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="public/views/otros.html">Más Juegos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero-section">
+        <div class="container text-center py-5">
+            <h1>Bienvenidos a Estrategia Gaming</h1>
+            <p class="lead">Tu destino definitivo para los mejores juegos de estrategia</p>
+        </div>
+    </header>
+
+    <div id="carouselJuegos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="public/views/img/clash-of-clans.png" class="d-block w-100" alt="Clash of Clans">
+                <div class="carousel-caption">
+                    <h3>Clash of Clans</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="public/views/img/civilization-vi.jpg" class="d-block w-100" alt="Civilization VI">
+                <div class="carousel-caption">
+                    <h3>Civilization VI</h3>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="public/views/img/kingdom-two-crown.jpg" class="d-block w-100" alt="Kingdom Two Crowns">
+                <div class="carousel-caption">
+                    <h3>Kingdom Two Crowns</h3>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselJuegos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselJuegos" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <main class="container my-5">
+        <section id="juegos" class="games-section">
+            <h2 class="text-center mb-4">Nuestros Juegos Destacados</h2>
+            
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="public/views/img/clash-of-clans.jpg" class="card-img-top" alt="Clash of Clans">
+                        <div class="card-body">
+                            <h3 class="card-title">Clash of Clans</h3>
+                            <p class="card-text">Construye tu aldea, forma un clan y compite en épicas guerras.</p>
+                            <a href="public/views/juego1.html" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="public/views/img/civilization-vi-logo.jpg" class="card-img-top" alt="Civilization VI">
+                        <div class="card-body">
+                            <h3 class="card-title">Civilization VI</h3>
+                            <p class="card-text">Construye un imperio que perdure a través de las eras.</p>
+                            <a href="public/views/juego2.html" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="public/views/img/kingdom-two-crow-logo.jpg" class="card-img-top" alt="Kingdom Two Crowns">
+                        <div class="card-body">
+                            <h3 class="card-title">Kingdom Two Crowns</h3>
+                            <p class="card-text">Gobierna tu reino y defiéndelo de las fuerzas oscuras.</p>
+                            <a href="public/views/juego3.html" class="btn btn-primary">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title text-center mb-4">Sugiérenos un Juego</h2>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="juego" class="form-label">Nombre del Juego</label>
+                                    <input type="text" class="form-control" id="juego" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="descripcion" class="form-label">¿Por qué deberíamos incluirlo?</label>
+                                    <textarea class="form-control" id="descripcion" rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Enviar Sugerencia</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Estrategia Gaming. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
